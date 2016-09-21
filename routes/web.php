@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('MasterSiswa.add_siswa');
 });
 
+Route::get('/register','RegisterOnlineController@add');
+
 Route::post('/siswa/postdatasiswa','MasterSiswaController@store');

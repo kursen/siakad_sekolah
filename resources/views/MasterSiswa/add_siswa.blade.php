@@ -1,4 +1,4 @@
- @extends('layout.master')
+ @extends('layout.master_admin')
  @section('title','Siswa')
  @section('content')
  <div class="right_col" role="main">
