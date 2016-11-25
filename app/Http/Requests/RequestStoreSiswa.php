@@ -36,7 +36,7 @@ class RequestStoreSiswa extends FormRequest
     public function messages()
     {
         return [
-            'nis.required' => 'silahkan isi nis',
+            'nis.required' => 'silahkan isi genk',
             'nis.numeric' => 'nis harus angka',
             'nis.unique' => 'nis sudah ada',
             'nama.required' => 'silahkan isi nama',

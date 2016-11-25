@@ -8,8 +8,8 @@ class MasterSiswaModel extends Model
 {
     //
     public $timestamps = false;
-    protected $table='mastersiswa';
-    protected $fillable = array('nis', 'nama', 'alamat');
+    protected $table='contact';
+    protected $fillable = array('email', 'name', 'phone','remarks');
 
 
 }
