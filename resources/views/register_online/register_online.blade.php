@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentellela Alela! | </title>
+    <title>Pendaftaran Online | </title>
 
     <!-- Bootstrap -->
     <link href="{{ URL::asset('vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -51,22 +51,8 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Online Register <small>different form elements</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
+                    <h2>Pendaftaran Online</h2>
+                    
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -74,27 +60,28 @@
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Lengkap <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="nama-lengkap" required="required" name="nama" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
+                      
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
-                        </label>
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Tempat / Tgl. Lahir</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <div class="input-group">
+                            <input id="tempat-lahir" class="form-control col-md-5 col-xs-5" type="text" name="tempat_lahir">
+                            <div class="input-group-addon">/</div>
+                            <input id="tanggal-lahir" class="date-picker form-control col-md-5 col-xs-5" 
+                            type="text" name="tanggal_lahir">
+                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                          </div>
+                          
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Middle Name / Initial</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Jenis Kelamin</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
@@ -106,13 +93,52 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Agama <span class="required">*</span>
                         </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                          {!! Form::select('agama', $arragama, 'Pilih', array('class' => 'form-control col-md-6 col-xs-6')) !!}
                         </div>
                       </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Alamat Lengkap <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="alamat-lengkap" required="required" name="alamat_lengkap" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tinggi & Berat Badan <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="input-group">
+                            <input id="tempat-lahir" class="form-control col-md-5 col-xs-5" type="text" name="tempat_lahir">
+                            <div class="input-group-addon">cm</div>
+                            <input id="berat-badan" class="date-picker form-control col-md-5 col-xs-5" type="text" name="tanggal_lahir">
+                            <div class="input-group-addon">Kg</div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">No Telepon / Handphone <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="alamat-lengkap" required="required" name="alamat_lengkap" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">E-mail <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="email" id="alamat-lengkap" required="required" name="alamat_lengkap" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -188,7 +214,7 @@
     <!-- bootstrap-daterangepicker -->
     <script>
       $(document).ready(function() {
-        $('#birthday').daterangepicker({
+        $('#tanggal-lahir').daterangepicker({
           singleDatePicker: true,
           calender_style: "picker_4"
         }, function(start, end, label) {

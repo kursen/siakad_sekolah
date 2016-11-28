@@ -11,6 +11,13 @@ class RegisterOnlineController extends Controller
     //
     public function add()
     {
-    	return view('register_online.register_online');
+    	$arragama = array();
+	 	$arragama[''] 			= 'Pilih';
+	 	$arragama['Islam'] 		= 'Islam';
+	 	$arragama['Katholik'] 	= 'Katholik';
+	 	$arragama['Protestan'] 	= 'Protestan';
+	 	$arragama['Hindu'] 		= 'Hindu';
+	 	$arragama['Budha']		= 'Budha';
+    	return view('register_online.register_online',['arragama'=>$arragama]);
     }
 }
