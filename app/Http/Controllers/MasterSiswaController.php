@@ -15,7 +15,7 @@ class MasterSiswaController extends Controller
 
     public function store(RequestStoreSiswa $request)
     {
-        /*$stat=0;
+        $stat=0;
     	$action = MasterSiswaModel::create([
     			'nis'=>$request->input('nis'),
     			'nama'=>$request->input('nama'),
@@ -24,6 +24,6 @@ class MasterSiswaController extends Controller
         if($action){
             $stat=1;
         }
-    	return response()->json(['return'=>$stat]);*/
+    	return response()->json(['return'=>$stat]);
     }
 }

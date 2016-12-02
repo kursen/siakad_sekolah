@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/register','RegisterOnlineController@add');
+Route::post('/pos_tregister','RegisterOnlineController@store');
 
 Route::post('/siswa/postdatasiswa','MasterSiswaController@store');

@@ -63,7 +63,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Lengkap <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="nama-lengkap" required="required" name="nama" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="nama-lengkap" required="required" name="nama_lengkap" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       
@@ -85,10 +85,10 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
+                              <input type="radio" name="jenis_kelamin" value="laki-laki"> &nbsp; Laki-laki &nbsp;
                             </label>
                             <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="female"> Female
+                              <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
                             </label>
                           </div>
                         </div>
@@ -115,9 +115,9 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                            <div class="input-group">
-                            <input id="tempat-lahir" class="form-control col-md-5 col-xs-5" type="text" name="tempat_lahir">
+                            <input id="tinggi-badan" class="form-control col-md-5 col-xs-5" type="text" name="tinggi_badan">
                             <div class="input-group-addon">cm</div>
-                            <input id="berat-badan" class="date-picker form-control col-md-5 col-xs-5" type="text" name="tanggal_lahir">
+                            <input id="berat-badan" class="form-control col-md-5 col-xs-5" type="text" name="berat_badan">
                             <div class="input-group-addon">Kg</div>
                           </div>
                         </div>
@@ -127,7 +127,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">No Telepon / Handphone <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                           <input type="text" id="alamat-lengkap" required="required" name="alamat_lengkap" class="form-control col-md-7 col-xs-12">
+                           <input type="text" id="no-telepon" required="required" name="no_telepon" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
@@ -135,7 +135,79 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">E-mail <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                           <input type="email" id="alamat-lengkap" required="required" name="alamat_lengkap" class="form-control col-md-7 col-xs-12">
+                           <input type="email" id="e-mail" required="required" name="email" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <h2 class="page-header">Data Sekolah</h2>
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Asal Sekolah <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="asal-sekolah" required="required" name="asal_sekolah" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Alamat  <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="alamat-sekolah" required="required" name="alamat_sekolah" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Jurusan <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="jurusan-sekolah" required="required" name="jurusan_sekolah" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tahun Kelulusan <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="tahun-lulus" required="required" name="tahun_lulus" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                         <h2 class="page-header">Data Orang Tua</h2>
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="nama-orang-tua" required="required" name="nama_orang_tua" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Alamat <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="alamat-orang-tua" required="required" name="alamat_orang_tua" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kota <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="kota-orang-tua" required="required" name="kota_orang_tua" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">No Telepon / Handphone <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" id="no-telepon-orang-tua" required="required" name="no_telepon_orang_tua" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Pekerjaan <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input type="text" required="required" name="pekerjaan" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       

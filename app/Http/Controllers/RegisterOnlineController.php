@@ -20,4 +20,9 @@ class RegisterOnlineController extends Controller
 	 	$arragama['Budha']		= 'Budha';
     	return view('register_online.register_online',['arragama'=>$arragama]);
     }
+
+    public function store()
+    {
+    	
+    }
 }
